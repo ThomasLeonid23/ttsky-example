@@ -30,7 +30,7 @@ jobs:
           make
           
           echo "files generated:"
-          ls-lsh
+          ls-lah
 
           test -f results.xml
 
