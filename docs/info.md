@@ -9,12 +9,17 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The project is fully synthesizable and implemented
+using the Tiny Tapeout RTL-to-GDS flow with OpenLane
+and the SKY130 process technology.
 
 ## How to test
 
-Explain how to use your project
+Simulation can be verified using:
+- Icarus Verilog
+- GTKWave
+- Tiny Tapeout testbench
 
 ## External hardware
+No external hardware is required.
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
