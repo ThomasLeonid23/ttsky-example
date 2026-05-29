@@ -28,16 +28,15 @@ jobs:
           cd test
           make clean
           make
+          # make will return success even if the test fails, so check for failure in the results.xml
           
-          echo "files generated:"
-          ls-lah
+
+          echo "Files generated."
+          ls -lah
 
           test -f results.xml
 
-          ! grep failure results.xml 
-          
-          # make will return success even if the test fails, so check for failure in the results.xml
-          
+          ! grep failure results.xml
 
       - name: Test Summary
         uses: test-summary/action@v2.4
